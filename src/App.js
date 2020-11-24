@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Gmap from './Comoponents/Gmap'
 import Header from './Comoponents/Header'
 import Loader from './Comoponents/Loader'
+
 function App() {
   const [eventdata, setEventData ] = useState([]);
   const [loader, setLoader] = useState(false);
@@ -16,7 +17,6 @@ function App() {
     }
     fetchEvents();
   },[])
-  console.log(eventdata);
   return (
     <div className="App">
       <Header/>

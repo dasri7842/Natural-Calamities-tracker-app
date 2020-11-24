@@ -1,8 +1,10 @@
 import GoogleMapReact from 'google-map-react';
+import env from "react-dotenv";
 import {useState } from 'react';
 import Datapop from './Datapop'
 import Fire from './Fire'
 const Gmap = ({data}) => {
+   console.log(env.API_KEY)
    const [datapop, setdatapop] = useState(null);
    const markers = data.map(ev => {
       if(ev.categories[0].id !== 12) 
@@ -21,7 +23,7 @@ const Gmap = ({data}) => {
    return (
       <div className="Gmap">
          <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyCd9O7PX98E0J7r6Cca1Rw9ibsZIJ3Hwrs'}}
+          bootstrapURLKeys={{ key: `${env.API_KEY}`}}
           defaultCenter={{
             lat : 0,
             lng : 0
