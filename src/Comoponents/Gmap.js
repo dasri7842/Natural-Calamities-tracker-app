@@ -1,5 +1,4 @@
 import GoogleMapReact from 'google-map-react';
-import env from "react-dotenv";
 import {useState } from 'react';
 import Datapop from './Datapop'
 import Fire from './Fire'
@@ -22,7 +21,7 @@ const Gmap = ({data}) => {
    return (
       <div className="Gmap">
          <GoogleMapReact
-          bootstrapURLKeys={{ key: `${env.API_KEY}`}}
+          bootstrapURLKeys={{ key: `${process.env.REACT_APP_API_KEY}`}}
           defaultCenter={{
             lat : 0,
             lng : 0
