@@ -4,7 +4,6 @@ import {useState } from 'react';
 import Datapop from './Datapop'
 import Fire from './Fire'
 const Gmap = ({data}) => {
-   console.log(env.API_KEY)
    const [datapop, setdatapop] = useState(null);
    const markers = data.map(ev => {
       if(ev.categories[0].id !== 12) 
