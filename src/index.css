@@ -1,13 +1,93 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.loader{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: #5bc0de;
+}
+.Gmap{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.button{
+  width: 20px;
+  height: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.btn{
+  float: right;
+  color: whitesmoke;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: ease 0.2s;
+}
+.btn:hover{
+  transform: scale(1.5);
+}
+.Marker{
+  width: 28px;
+  height: 40px;
+  position: relative;
+  top: 0;
+  transition: ease 0.2s;
+}
+.Marker:hover{
+  top: -10px;
+  transform: scale(1.5);
+}
+.header{
+  text-align: center;
+  position: absolute;
+  font-size: larger;
+  width: 100vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #292b2c;
+  color: #5bc0de;
+  z-index: 1;
+}
+.datapop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 100px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.datapop ul{
+  list-style-type: none;
+  padding: 0;
+}
+.datapop li{
+  padding-left: 10px;
+}
+.datapop h2{
+  color: coral;
+}
+.item{
+  color: aquamarine;
+  font-size: large;
 }
