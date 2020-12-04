@@ -23,7 +23,7 @@ const Gmap = ({data}) => {
    return (
       <div className="Gmap">
          <GoogleMapReact
-          bootstrapURLKeys={{ key: `${process.env.REACT_APP_API_KEY}`}}
+          bootstrapURLKeys={{ key: 'AIzaSyASzUpdqx_L8SgIYhbtxnv6HRtb83xwsNE'}}
           defaultCenter={{
             lat : 0,
             lng : 0
